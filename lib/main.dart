@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const BooklyApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class BooklyApp extends StatelessWidget {
+  const BooklyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bookly',
-      theme: ThemeData(
-        useMaterial3: false
-      ),
+      theme: ThemeData(useMaterial3: false),
+      home: SplashView(),
     );
   }
 }
-
