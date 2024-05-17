@@ -12,17 +12,17 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
+  font_awesome_flutter: ^10.7.0
   get: ^4.6.6
 
 dev_dependencies:
-
   flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
 
 flutter:
   uses-material-design: true
-  
+
   assets:
     - assets/images/
   #   - images/a_dot_ham.jpeg
