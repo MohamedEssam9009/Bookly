@@ -29,7 +29,7 @@ class ServerFailure extends Failure {
       case DioExceptionType.unknown:
         if (dioException.message!.contains('SocketException')) {
           return ServerFailure('No internet connection');
-        } 
+        }
         return ServerFailure('Unexpected error please try again later');
       default:
         return ServerFailure('Opps something went wrong');
